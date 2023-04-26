@@ -1,0 +1,418 @@
+/**
+{
+    border: 1px solid white;
+}**/
+#dropdown-menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#map 
+{
+    height: 500px;
+    width: 94.2%;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 3px solid #1c2333;
+}
+#space
+{
+    padding: 3px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e1525;
+    
+}
+.header
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px ;
+    background-color: #0e1525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-left
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon-bg
+{
+    background-color: transparent;
+}
+.header-right
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#sidebar
+{
+    width: 20px;
+    height: 20px;
+}
+#logo
+{
+    width: 35px;
+    margin-top: 6px;
+    margin-left: 7px;
+}
+/*Tool bar and map designin*/
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+}
+.notes
+{
+    width: 30%;
+    border-radius: 6px;
+    background-color: #1c2333;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*Tool bar designing*/
+
+.container
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.toolbar
+{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+}
+.btn
+{
+  background-color: cornflowerblue;
+  margin-top: 5px;
+}
+.icon
+{
+  width: 10px;
+}
+
+
+
+/* Design for button and icon in the button on the side bar*/
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .btn::after {
+    
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: .2s linear;
+  }
+  
+  .icon path {
+    fill: white;
+    transition: .2s linear;
+  }
+  
+  .btn:hover > .icon {
+    transform: scale(1.2);
+  }
+  
+  .btn:hover > .icon path {
+    fill: rgb(177, 139, 189);
+  }
+  
+  .btn:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+
+
+  /*Search box*/
+  
+.sidebox
+{
+  width: 260px;
+  background-color: grey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 500px;
+  
+}
+.controls
+{
+    margin-top: 10px;
+}
+
+#pac-input {
+    max-width: 190px;
+    background-color: #e9e5d9;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #pac-input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  #pac-input:hover 
+  {
+    outline: 1px solid lightgrey;
+  }
+
+
+
+
+
+
+
+
+/*Filter Section*/
+#block-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item filter-1
+{
+    width: 20px;
+    background-color: #242424;
+}
+
+#filter-1
+{
+    width: 100%; /* set the width of the image */
+  height: 100%; /* set the height of the image */
+  object-fit: contain; /* fit the image inside the button */
+  border-radius: 10px;
+    
+}
+.filter-1btn
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 165px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 15px;
+    border-radius: 10px;
+}
+#filter-2
+{
+    width: 165px;
+    height: 100px;
+    
+}
+#filter-2btn
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.sidebox::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+  
+  .sidebox::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .sidebox::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  .sidebox::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+
+  .head-right-ele{
+    border: 2px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 0.9em;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 10px;
+    margin-right: 3px;
+   }
+   
+   .head-right-ele span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+   }
+   
+   .head-right-ele:hover {
+    background-color: #0071e2;
+   }
+
+
+
+/*Pop Up box of create jason code*/
+/* hide the pop-up box by default */
+/*#popup-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+  }
+  
+  /* style for the close button */
+  /*#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  /* style for the copy button */
+/*#copy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* hover effect for the copy button */
+  /*#copy-button:hover {
+    background-color: #3e8e41;
+  }*/
+  /* styles for the pop-up box */
+
+  #pop-bg
+  {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+#popup-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow-y: scroll;
+    height: 100%;
+    
+  }
+  
+  #popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  #popup-content h2 {
+    margin-top: 0;
+  }
+  
+  #popup-content p {
+    margin-bottom: 20px;
+  }
+  
+  /* styles for the copy button */
+  #copy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* hover effect for the copy button */
+  #copy-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* styles for the close button */
+  #close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  
+
+  

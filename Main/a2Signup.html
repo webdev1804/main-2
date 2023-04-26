@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up - Mapit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./log.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js"></script>
+  </head>
+  <body>
+    <div>
+      <img src="./logo.png" id="logo" />
+    </div>
+    <div>
+      <h2>Create a Mapit account</h2>
+    </div>
+    <div class="card">
+      <form id="signup-form">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="input" required>
+          <div id="username-error" class="error-message"></div>
+        </div>
+        <div class="field">
+          <label for="Email">Email</label>
+          <input type="email" id="email" name="email" class="input" />
+          <div id="email-error" class="error-message"></div>
+        </div>
+        <div class="field">
+          <label for="Password">Password</label>
+          <input type="password" id="password" name="password" class="input" />
+          <div id="password-error" class="error-message"></div>
+        </div>
+        <button class="custom-btn btn-1" type="submit">Create Account</button>
+      </form>
+    </div>
+    <div class="line">
+      <p>Have an account?<a href="a3Login.html">Log In</a></p>
+    </div>
+    <button class="cssbuttons-io-button">
+      <img src="./Google-logo-removebg-preview.png" viewBox="0 0 24 24" width="24" height="24"/>
+      <span>Continue with Google</span>
+    </button>
+    <script src="b2Signup.js"></script>
+  </body>
+</html>

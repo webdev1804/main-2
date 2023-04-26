@@ -1,0 +1,191 @@
+
+
+body
+{
+ margin: 0px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+background-color: #e57c45;
+}
+
+#logo
+{
+ width: 70px;
+ padding-top: 30px;
+}
+
+h2
+{
+ margin-top: 2px;
+ color: #f6dcb8;
+ margin-bottom: 2px
+}
+
+
+.card
+{
+  width: 320px;
+  height: 280px;
+  border-radius: 20px;
+  background: #172d43;
+  box-shadow: 5px 5px 10px #e57c45,
+  -5px -5px 20px #e57c45;
+  margin-top: 10px;
+}
+
+form 
+{
+ display: flex;
+ flex-direction: column;
+ margin-top: 10px;
+ margin-left: 20px;
+ margin-right: 10px;
+}
+
+.field {
+ padding-bottom: 10px;
+ padding-top: 7px;
+}
+
+.input {
+ border-radius: 5px;
+ background-color: #f1d4c5;
+ padding: 5px;
+ width: 268px;
+ height: 20px;
+ color: #172d43;
+ border: 1px solid #febf9f
+}
+
+.input:focus-visible {
+ outline: 2px solid #e57c45;
+}
+
+.input::placeholder {
+ color: #172d43;
+}
+
+label {
+ color: #7b8b94;
+ font-size: 14px;
+ display: block;
+ padding-bottom: 4px;
+}
+
+
+
+.custom-btn {
+ width: 280px;
+ height: 33px;
+ margin-top: 8px;
+ color: #172d43;
+ border-radius: 5px;
+ padding: 10px 25px;
+ font-family: 'Lato', sans-serif;
+ font-weight: 500;
+ background: transparent;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ position: relative;
+ display: inline-block;
+ box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+  7px 7px 20px 0px rgba(45, 36, 72, 0.1),
+  4px 4px 5px 0px rgba(35, 15, 64, 0.1);
+ outline: none;
+}
+
+.btn-1 {
+ background: #eb793b;
+ background: linear-gradient(0deg, #7b8b94 0%, #6e8b9b 100%);
+ border: none;
+}
+
+.btn-1:hover {
+ background: rgb(0, 3, 255);
+ background: linear-gradient(0deg, #e98651 0%, #e97639 100%);
+}
+
+
+.custom-btn2 {
+ width: 320px;
+ height: 40px;
+ margin-top: 8px;
+ color: #6e8b9b;
+ border-radius: 5px;
+ padding: 10px 25px;
+ font-family: 'Lato', sans-serif;
+ font-weight: 500;
+ background: transparent;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ position: relative;
+ display: inline-block;
+ box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+  7px 7px 20px 0px rgba(65, 63, 130, 0.1),
+  4px 4px 5px 0px rgba(46, 65, 96, 0.1);
+ outline: none;
+ justify-content: left;
+}
+
+.btn-12 {
+ background: #eb793b;
+ background: linear-gradient(0deg, #172d43 0%, #1c3145 100%);
+}
+
+.btn-12:hover {
+ background: rgb(0, 3, 255);
+ background: linear-gradient(0deg, #172d43  0%, #172d43 100%);
+ border: 2px solid #febf9f;
+}
+
+.cssbuttons-io-button {
+ display: flex;
+ align-items: center;
+ font-family: inherit;
+ font-weight: 500;
+ font-size: 17px;
+ padding: 0.8em 1.5em 0.8em 1.2em;
+ color: white;
+ background: #ad5389;
+ background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+ border: none;
+ box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+ letter-spacing: 0.05em;
+ border-radius: 20em;
+ width: 270px;
+}
+
+.cssbuttons-io-button img {
+ margin-right: 10px;
+}
+
+.cssbuttons-io-button:hover {
+ box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+ box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
+#forgot
+{
+ padding-left: 167px;
+ color: #6e8b9b;
+}
+#username-error
+{
+  color:rgb(243, 119, 119);
+  font-size: 10px;
+}
+#email-error
+{
+  color:rgb(243, 119, 119);
+  font-size: 10px;
+}
+#password-error
+{
+  color:rgb(243, 119, 119);
+  font-size: 10px;
+}

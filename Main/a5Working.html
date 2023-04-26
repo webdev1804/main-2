@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c2working.css">
+</head>
+<body>
+
+
+
+    
+    <div class="header">
+        <div >
+            <img src="logo.png" alt="Description of image" id="logo">
+        </div>
+        <div class="header-right">
+            <div>
+                <button id="static" onclick="generateJsonCode()" class="head-right-ele"><span>static</span></button>
+            </div>
+            <div>
+                <button id="stylearray" onclick="generateJsonCode()" class="head-right-ele"><span>create style array</span></button>
+                <div id="pop-bg">
+                    <div id="popup-box">
+                        <div id="popup-content">
+                          <h2>Output goes here</h2>
+                          <p id="jsoncode">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod diam, eu auctor sapien aliquet ut.</p>
+                          <button id="copy-button">Copy</button>
+                          <span id="close-button">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="space"></div>
+
+
+
+<!--Tool bar and map-->
+    <div class="main">
+        <div class="container">
+            <div class="toolbar">
+              <button class="btn" id="button-1">
+                <img src="search-location.png" alt="search-location" class="icon" />
+              </button>
+              <button class="btn" id="button-2">
+                <img src="settings-sliders.png" alt="search-location" class="icon" />
+              </button>
+              <button class="btn" id="button-3">
+                <img src="location-pin.png" alt="search-location" class="icon" />
+              </button>
+            </div>
+        
+            <div class="sidebox" id="block-1">
+                <div>
+                    <input id="pac-input" class="controls" type="text" placeholder="Search">        
+                </div>
+            </div>
+            <div class="sidebox" id="block-2">
+                <div><h1>Filters</h1></div>
+                <button class="filter-1btn" id="vintage-old-golden-brown" onclick="setMapStyle('vintage-old-golden-brown')">
+                    <img src="vintage-old-golden-brown.png" alt="search-location" class="icon" id="filter-1" />
+                </button>
+                <button class="filter-1btn" id="wy" onclick="setMapStyle('Wy')">
+                    <img src="wy.png" alt="search-location" class="icon" id="filter-1" />
+                </button>
+                <button class="filter-1btn" id="google-vintage" onclick="setMapStyle('google-vintage')">
+                    <img src="googles-vintage.png" alt="search-location" class="icon" id="filter-1" />
+                </button>
+                <button class="filter-1btn" id="vintage" onclick="setMapStyle('vintage')">
+                    <img src="vintage.png" alt="search-location" class="icon" id="filter-1" />
+                </button>
+                <button class="filter-1btn" id="darkstyle" onclick="setMapStyle('darkstyle')">
+                    <img src="darkstyle.png" alt="search-location" class="icon" id="filter-1" />
+                </button>
+            </div>
+            <div class="sidebox" id="block-3">
+                <div>
+                   
+                </div>
+            </div>
+        </div>
+        <script src="c2working_tool.js"></script>
+
+        <div id="map"></div>
+    </div>
+
+
+
+
+    <script src="b2Working.js"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDISP6VVFWGHgkg6_DeH9MlzmEv3f1dL7A&callback=initMap"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDISP6VVFWGHgkg6_DeH9MlzmEv3f1dL7A&callback=initMap&libraries=places"
+        async defer></script>
+</body>
+</html>
